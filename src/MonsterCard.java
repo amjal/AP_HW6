@@ -31,9 +31,11 @@ public class MonsterCard extends Card{
     public void setCanAttack(boolean canAttack){
         this.canAttack = canAttack;
     }
-    public boolean equals(MonsterCard monsterCard){
-        if (super.equals(monsterCard) && power == monsterCard.getPower() &&
-                basePower == monsterCard.getBasePower()) return true;
+    @Override
+    public boolean equals(Card monsterCard){
+        if (monsterCard.getClass().getName().equals(this.getClass().getName()) &&
+                super.equals(monsterCard) && power ==((MonsterCard) monsterCard).getPower() &&
+                basePower == ((MonsterCard)monsterCard).getBasePower()) return true;
         return false;
     }
     public String toString(){

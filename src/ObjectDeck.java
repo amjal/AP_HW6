@@ -4,10 +4,10 @@
 public abstract class ObjectDeck {
     protected Object array[];
     protected int dealIndex;
-    public ObjectDeck(Object array[]){
-        this.array = new Object[array.length];
+    public ObjectDeck(Object... object){
+        this.array = new Object[object.length];
         for(int i =0 ; i < array.length ; i ++){
-            this.array[i] = array[i];
+            this.array[i] = object[i];
         }
         dealIndex = array.length -1;
     }

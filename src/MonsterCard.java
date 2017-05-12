@@ -19,7 +19,7 @@ public class MonsterCard extends Card{
     public int getBasePower(){
         return basePower;
     }
-    public boolean canAttack(){
+    public boolean getCanAttack(){
         return canAttack;
     }
     public void setPower(int power){

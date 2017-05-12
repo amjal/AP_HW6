@@ -2,6 +2,7 @@
  * Created by Amir on 5/11/2017.
  */
 public abstract class Card {
+    //mohsen sucks dick
     private String name;
     private String description;
     public Card(String name , String description){
